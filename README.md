@@ -1,50 +1,48 @@
 🧬 HLA Polymorphism and Peptide Binding Diversity
-
 A Computational Immunoinformatics Analysis
-
 🔍 Background
 
 The Human Leukocyte Antigen (HLA) system is the most polymorphic gene family in humans.
-This extreme genetic diversity is believed to improve immune defense by enabling the presentation of a broad range of pathogen-derived peptides to T cells.
+This extreme genetic diversity enhances immune defense by enabling presentation of a broad spectrum of pathogen-derived peptides to T cells.
 
-Understanding how HLA polymorphism enhances antigen presentation is critical for:
+Understanding HLA polymorphism is critical for:
 
-infectious disease immunity
+🦠 Infectious disease immunity
 
-vaccine development
+💉 Vaccine development
 
-transplant compatibility
+🧫 Transplant compatibility
 
-evolutionary biology
+🧬 Evolutionary biology
 
 🎯 Objectives
 
-This project aims to computationally demonstrate that:
+This project computationally demonstrates that:
 
 The HLA-A locus exhibits extreme sequence polymorphism
 
-A large fraction of amino acid positions are variable across alleles
+A large fraction of amino-acid positions are variable across alleles
 
-Individuals carrying different HLA alleles recognize a broader set of pathogen peptides
+Individuals carrying different HLA alleles recognize more pathogen peptides
 
-Heterozygote advantage explains evolutionary maintenance of HLA diversity
+Heterozygote advantage and balancing selection explain evolutionary maintenance of HLA diversity
 
 📁 Data Sources
 🔹 HLA Protein Sequences
 
-Source: IPD-IMGT/HLA database (official GitHub mirror)
+Source: IPD-IMGT/HLA Database (official GitHub mirror)
 
 Locus analyzed: HLA-A
 
-Total alleles extracted: ~9000
+Total alleles extracted: ~9,000
 
 🔹 Viral Epitope Peptides
 
-Source: Immune Epitope Database (IEDB) public API
+Source: Immune Epitope Database (IEDB) Public API
 
-Data type: experimentally validated viral peptide epitopes
+Data type: Experimentally validated viral peptide epitopes
 
-All data acquisition is fully reproducible using command-line tools.
+✅ All datasets are acquired using fully reproducible command-line pipelines.
 
 ⚙️ Methods
 1. HLA Allele Extraction
@@ -53,7 +51,7 @@ Downloaded full HLA protein FASTA database
 
 Filtered sequences belonging to the HLA-A locus
 
-Removed malformed FASTA lines
+Removed malformed FASTA entries
 
 2. Multiple Sequence Alignment
 
@@ -91,44 +89,43 @@ Heterozygous genotypes (two distinct alleles)
 
 HLA-A shows extreme allelic diversity with thousands of known variants
 
-60% of aligned amino-acid positions are polymorphic
+>60% of aligned amino-acid positions are polymorphic
 
-Polymorphic sites cluster in functional antigen-binding regions
+Polymorphic residues cluster in functional antigen-binding regions
 
 Simulated heterozygous individuals recognize substantially more peptides than homozygotes
 
-These results provide computational support for:
+These findings provide computational support for:
 
-Balancing selection and heterozygote advantage as evolutionary mechanisms maintaining HLA polymorphism.
+Balancing selection and heterozygote advantage as key evolutionary mechanisms maintaining HLA polymorphism.
 
 🧠 Biological Interpretation
 
 HLA molecules must balance:
 
-structural stability of the protein
+✅ Structural stability of the protein
 
-variability in peptide-binding pockets
+🔀 Variability in peptide-binding pockets
 
 Conserved residues maintain molecular structure,
 while polymorphic residues diversify antigen recognition.
 
 This enables:
 
-population-level protection against emerging pathogens
+Population-level protection against emerging pathogens
 
-survival advantage during epidemics
+Increased survival during epidemic outbreaks
 
 🛠 Tools & Technologies
 
-Python (Biopython, NumPy, Matplotlib)
+Python: Biopython, NumPy, Matplotlib
 
-Clustal Omega (MSA)
+Multiple Sequence Alignment: Clustal Omega
 
-Bash / Linux command-line tools
+Shell scripting: Bash / Linux command-line tools
 
-IEDB public epitope API
+Databases:
 
-IPD-IMGT/HLA database
+IPD-IMGT/HLA
 
-
-
+Immune Epitope Database (IEDB)
